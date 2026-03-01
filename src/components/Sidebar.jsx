@@ -52,8 +52,10 @@ export default function Sidebar() {
             <Shield className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h1 className="text-sm font-bold leading-tight">NIS Staff</h1>
-            <p className="text-xs text-white/70">Management System</p>
+            <h1 className="text-sm font-bold leading-tight">
+              Nigeria Immigration Service
+            </h1>
+            <p className="text-xs text-white/70">SMIS</p>
           </div>
           <button
             onClick={() => setMobileOpen(false)}
