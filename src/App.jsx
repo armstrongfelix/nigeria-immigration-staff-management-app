@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import StaffList from "./pages/StaffList";
 import StaffProfile from "./pages/StaffProfile";
 import AddStaff from "./pages/AddStaff";
+import Layoutt from "./components/Layout";
 
 export default function App() {
   return (
