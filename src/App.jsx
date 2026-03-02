@@ -1,13 +1,19 @@
-import React from "react";
-import Sidebar from "./components/Sidebar";
-import Navbar from "./components/Navbar";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Dashboard from "./pages/Dashboard";
+import StaffList from "./pages/StaffList";
+import StaffProfile from "./pages/StaffProfile";
+import AddStaff from "./pages/AddStaff";
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Navbar />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Dashboard />} />
+        <Route path="staff" element={<StaffList />} />
+        <Route path="staff/add" element={<AddStaff />} />
+        <Route path="staff/:id" element={<StaffProfile />} />
+      </Route>
+    </Routes>
   );
 }
-
-export default App;
